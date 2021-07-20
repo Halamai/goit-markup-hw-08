@@ -4,10 +4,9 @@
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 .hero {
   max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
   background: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -15,21 +14,73 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg.jpg);
+    url(../images/png/bi-tel-img-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  block-size: auto;
-  &__title {
-    max-width: 696px;
-    text-transform: uppercase;
-    color: var(--occasionally-next-color);
-    letter-spacing: 0.06em;
-    text-align: center;
-    margin: 0 auto 30px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/png/bi-tel-2x-min.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/png/bi-table-img-min.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/png/header-table-2x-min.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/png/bi-desk-min.jpg);
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/png/bi-desk-2x-min.jpg);
+    }
+  }
+  background-size: cover;
+}
+
+.hero__title {
+  max-width: 696px;
+  text-transform: uppercase;
+  color: var(--occasionally-next-color);
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin: 0 auto 30px;
+  font-weight: 900;
+  font-size: 44px;
+  @media screen and (min-width: 480px) {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
+
 .hero__button {
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

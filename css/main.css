@@ -61,6 +61,10 @@ body {
   font-size: 16px;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   align-items: center;
@@ -98,6 +102,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   display: block;
+  border: none;
+  background: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -137,6 +143,10 @@ body {
 .header-navigation__links__active {
   color: #2196f3;
   position: relative;
+}
+
+.header-item {
+  display: none;
 }
 
 .header-item__active {
@@ -211,11 +221,13 @@ body {
   fill: #188ce8;
 }
 
-.header.container {
+.header .container {
   display: flex;
 }
 
 .mob-menu {
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -236,8 +248,7 @@ body {
 }
 
 .mob-menu.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  transform: translateX(100%);
 }
 
 .mob-menu-bottom {
@@ -247,13 +258,26 @@ body {
 }
 
 .menu-open {
-  background: unset;
   border: none;
-  font-size: 26px;
+  background-color: transparent;
+}
+
+.mob-menu-list__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1, 17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 36px;
+}
+
+.mob-menu-list__link:hover,
+.mob-menu-list__link:focus {
+  color: #2196f3;
 }
 
 .mob-menu-list__link {
@@ -267,9 +291,21 @@ body {
 }
 
 .btn-close {
+  border: none;
+  background-color: transparent;
   position: absolute;
   right: 35px;
   top: -22px;
+}
+
+.btn-close:focus, .btn-close:hover {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-close {
+    display: none;
+  }
 }
 
 .mob-menu-contacts {
@@ -288,13 +324,27 @@ body {
 }
 
 .mob-menu-contacts__link_size_big {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2196f3;
   font-size: 34px;
   line-height: 1.18;
 }
 
 .mob-menu-contacts__link_size_small {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .mob-menu-social {
@@ -333,15 +383,43 @@ body {
 
 .hero {
   max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
   background: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png/bi-tel-img-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  block-size: auto;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png/bi-tel-2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png/bi-table-img-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png/header-table-2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png/bi-desk-min.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png/bi-desk-2x-min.jpg);
+  }
 }
 
 .hero__title {
@@ -353,6 +431,17 @@ body {
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .hero__button {

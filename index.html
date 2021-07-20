@@ -43,65 +43,69 @@
             <ul class="header-contacts">
                 <li class="header-item"><a href="mailto:info@devstudio.com"
                         class="link header-contacts__mail header-mail">
-                        <svg class="header-contacts__icon" width="16" height="12">
+                        <svg class="header-contacts__icon">
                             <use href="./images/sprite.svg#icon-envelope-1"></use>
                         </svg>info@devstudio.com</a></li>
 
                 <li class="header-item"><a href="tel:+380961111111" class="link header-contacts__tel header-mail">
-                        <svg class="header-contacts__icon" width="16" height="12">
+                        <svg class="header-contacts__icon">
                             <use href="./images/sprite.svg#icon-Vector-1"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-            <button class="butoon" class="menu-open">
-                <svg width="18" height="18">
+
+            <button class="button" id="menu-open" class="menu-open">
+                <svg class="menu-open-svg" width="40" height="40">
                     <use class="icon-menu" href="./images/sprite.svg#icon-menu_24px"></use>
                 </svg>
             </button>
         </div>
 
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
             <div class="container">
                 <button class="btn-close">
                     <svg class="modal-close-icon" width="18" height="18">
                         <use href="./images/sprite.svg#icon-close_24px"></use>
                     </svg>
                 </button>
-                <ul class="mob-menu-list list">
-                    <li class="mob-menu-list__item">
-                        <a href="" class="mob-menu-list__link">Студия</a>
-                    </li>
-                    <li class="mob-menu-list__item">
-                        <a href="" class="mob-menu-list__link">Портфолио</a>
-                    </li>
-                    <li class="mob-menu-list__item">
-                        <a href="" class="mob-menu-list__link">Контакты</a>
-                    </li>
-                </ul>
-                <div class="mob-menu-bottom">
-                    <ul class="mob-menu-contacts list">
-                        <li class="mob-menu-contacts__item">
-                            <a href="" class="mob-menu-contacts__link mob-menu-contacts__link_size_big">+38 096 111 11
-                                11</a>
+                <div class="">
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Студия</a>
                         </li>
-                        <li class="mob-menu-contacts__item">
-                            <a href=""
-                                class="mob-menu-contacts__link mob-menu-contacts__link_size_small">info@devstudio.com</a>
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Портфолио</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="mob-menu-social list">
-                        <li class="mob-menu-social__item">
-                            <a href="" class="mob-menu-social__link">Instagram</a>
-                        </li>
-                        <li class="mob-menu-social__item">
-                            <a href="" class="mob-menu-social__link">Twitter</a>
-                        </li>
-                        <li class="mob-menu-social__item">
-                            <a href="" class="mob-menu-social__link">Facebook</a>
-                        </li>
-                        <li class="mob-menu-social__item">
-                            <a href="" class="mob-menu-social__link">LinkedIn</a>
-                        </li>
-                    </ul>
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-contacts list">
+                            <li class="mob-menu-contacts__item">
+                                <a href="" class="mob-menu-contacts__link mob-menu-contacts__link_size_big">+38 096 111
+                                    11
+                                    11</a>
+                            </li>
+                            <li class="mob-menu-contacts__item">
+                                <a href=""
+                                    class="mob-menu-contacts__link mob-menu-contacts__link_size_small">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-menu-social list">
+                            <li class="mob-menu-social__item">
+                                <a href="" class="mob-menu-social__link">Instagram</a>
+                            </li>
+                            <li class="mob-menu-social__item">
+                                <a href="" class="mob-menu-social__link">Twitter</a>
+                            </li>
+                            <li class="mob-menu-social__item">
+                                <a href="" class="mob-menu-social__link">Facebook</a>
+                            </li>
+                            <li class="mob-menu-social__item">
+                                <a href="" class="mob-menu-social__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -110,12 +114,12 @@
 
 
 
-        </div>
+
     </header>
 
     <!-- MAIN -->
 
-    <!-- <main>
+    <main>
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -123,385 +127,386 @@
             </div>
         </section>
 
-        <-- OUR WORK -->
+        <!-- <-- OUR WORK -->
 
-    <section class="ourwork">
-        <div class="container">
-            <h2 class="transparent-title">Наша робота</h2>
-            <ul class="ourwork-title">
-                <li class="ourwork-title__text ourwork-title__textmargin">
-                    <div class="text-picture">
-                        <svg class="text-picture__item" width="70" height="70">
-                            <use href="./images/sprite.svg#icon-antenna-1-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Внимание к деталям</h3>
-                    <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию
-                        позиции.
-                    </p>
-                </li>
-                <li class="ourwork-title__text ourwork-title__textmargin">
-                    <div class="text-picture">
-                        <svg class="text-picture__item" width="70" height="70">
-                            <use href="./images/sprite.svg#icon-clock-1-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Пунктуальность</h3>
-                    <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет
-                        за
-                        собой.</p>
-                </li>
-                <li class="ourwork-title__text ourwork-title__textmargin">
-                    <div class="text-picture">
-                        <svg class="text-picture__item" width="70" height="70">
-                            <use href="./images/sprite.svg#icon-diagram-1-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Планирование</h3>
-                    <p class="title-text">Равным образом консультация с широким активом в значительной степени
-                        обуславливает.</p>
-                <li class="ourwork-title__text ourwork-title__textmargin">
-                    <div class="text-picture">
-                        <svg class="text-picture__item" width="70" height="70">
-                            <use href="./images/sprite.svg#icon-astronaut-1-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Современные технологии</h3>
-                    <p class="title-text">Значимость этих проблем настолько очевидна, что реализация плановых
-                        заданий.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- WHAT WE DO -->
+        <section class="ourwork">
+            <div class="container">
+                <h2 class="transparent-title">Наша робота</h2>
+                <ul class="ourwork-title">
+                    <li class="ourwork-title__text ourwork-title__textmargin">
+                        <div class="text-picture">
+                            <svg class="text-picture__item" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-antenna-1-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Внимание к деталям</h3>
+                        <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.
+                        </p>
+                    </li>
+                    <li class="ourwork-title__text ourwork-title__textmargin">
+                        <div class="text-picture">
+                            <svg class="text-picture__item" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-clock-1-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Пунктуальность</h3>
+                        <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет
+                            за
+                            собой.</p>
+                    </li>
+                    <li class="ourwork-title__text ourwork-title__textmargin">
+                        <div class="text-picture">
+                            <svg class="text-picture__item" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-diagram-1-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Планирование</h3>
+                        <p class="title-text">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.</p>
+                    <li class="ourwork-title__text ourwork-title__textmargin">
+                        <div class="text-picture">
+                            <svg class="text-picture__item" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-astronaut-1-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Современные технологии</h3>
+                        <p class="title-text">Значимость этих проблем настолько очевидна, что реализация плановых
+                            заданий.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- WHAT WE DO -->
 
-    <section class="whatwedo">
-        <div class="container">
-            <h2 class="title-work">Чем мы занимаемся</h2>
-            <ul class="whatwedo-list">
-                <li class="whatwedo-list__picture">
-                    <div class="picture-wrap">
+        <section class="whatwedo">
+            <div class="container">
+                <h2 class="title-work">Чем мы занимаемся</h2>
+                <ul class="whatwedo-list">
+                    <li class="whatwedo-list__picture">
+                        <div class="picture-wrap">
+                            <picture>
+
+                                <source srcset="./images/desktop/box1x-min.jpg 2x,./images/desktop/box1-min.jpg 1x"
+                                    media="(min-width: 1200px)">
+                                <img src="images/box1.jpg" alt="программирования" width="370" height="294">
+
+                            </picture>
+
+                            <p class="picture-title">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="whatwedo-list__picture">
+                        <div class="picture-wrap">
+                            <picture>
+
+                                <source srcset="./images/desktop/box2x-min.jpg 2x,./images/desktop/box2-min.jpg 1x"
+                                    media="(min-width: 1200px)">
+                                <img src="images/box2.jpg" alt="подключения дивайсов" width="370" height="294">
+
+                            </picture>
+
+
+                            <p class="picture-title">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="whatwedo-list__picture">
+                        <div class="picture-wrap">
+                            <picture>
+
+                                <source srcset="./images/desktop/box3x-min.jpg 2x,./images/desktop/box3-min.jpg 1x"
+                                    media="(min-width: 1200px)">
+                                <img src="images/box3.jpg" alt="соответствие требованиям заказчика" width="370"
+                                    height="294">
+
+                            </picture>
+
+
+                            <p class="picture-title">Дизайнерские решения</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- OUR COMPANY -->
+
+        <section class="ourcompany">
+            <div class="container">
+                <h2 class="title-work">Наша команда</h2>
+                <ul class="ourcompany-menu">
+                    <li class="ourcompany-menu__list">
                         <picture>
 
-                            <source srcset="./images/desktop/box1x-min.jpg 2x,./images/desktop/box1-min.jpg 1x"
+                            <source
+                                srcset="./images/desktop/product-designer2x-min.jpg 2x,./images/desktop/product-designer-min.jpg 1x"
                                 media="(min-width: 1200px)">
-                            <img src="images/box1.jpg" alt="программирования" width="370" height="294">
+                            <source srcset="./images/table/img@2x-min.jpg 2x, ./images/table/img-min.jpg 1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/img@2xt1-min.jpg 2x, ./images/mobile/img-min.jpg 1x"
+                                media="(min-width: 480px)">
+
+
+                            <img class="worker-picture" src="images/img1.jpg" alt="фото сотрудника">
 
                         </picture>
 
-                        <p class="picture-title">Десктопные приложения</p>
-                    </div>
-                </li>
-                <li class="whatwedo-list__picture">
-                    <div class="picture-wrap">
+                        <div class="worker-occupation">
+                            <h3 class="worker-occupation__name">Игорь Демьяненко</h3>
+                            <p class="worker-occupation__title">Product Designer</p>
+                            <ul class="worker-meny">
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram-2-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector4-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector5-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ourcompany-menu__list">
+
                         <picture>
 
-                            <source srcset="./images/desktop/box2x-min.jpg 2x,./images/desktop/box2-min.jpg 1x"
+                            <source
+                                srcset="./images/desktop/frontend-developer2x-min.jpg 2x,./images/desktop/frontend-developer-min.jpg 1x"
                                 media="(min-width: 1200px)">
-                            <img src="images/box2.jpg" alt="подключения дивайсов" width="370" height="294">
+                            <source srcset="./images/table/img@2xq-min.jpg 2x, ./images/table/imgq-min.jpg 1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/img@2xt2-min.jpg 2x, ./images/mobile/imgt2-min.jpg 1x"
+                                media="(min-width: 480px)">
+
+
+                            <img class="worker-picture" src="images/img2.jpg" alt="фото сотрудника">
 
                         </picture>
 
 
-                        <p class="picture-title">Мобильные приложения</p>
-                    </div>
-                </li>
-                <li class="whatwedo-list__picture">
-                    <div class="picture-wrap">
+                        <div class="worker-occupation">
+                            <h3 class="worker-occupation__name">Ольга Репина</h3>
+                            <p class="worker-occupation__title">Frontend Developer</p>
+                            <ul class="worker-meny">
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram-2-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector4-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector5-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ourcompany-menu__list">
+
                         <picture>
 
-                            <source srcset="./images/desktop/box3x-min.jpg 2x,./images/desktop/box3-min.jpg 1x"
+                            <source
+                                srcset="./images/desktop/marketing2x-min.jpg 2x,./images/desktop/marketing-min.jpg 1x"
                                 media="(min-width: 1200px)">
-                            <img src="images/box3.jpg" alt="соответствие требованиям заказчика" width="370"
-                                height="294">
+                            <source srcset="./images/table/img@2x3man-min.jpg 2x, ./images/table/img3man-min.jpg 1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/img@2xt3-min.jpg 2x, ./images/mobile/imgt3-min.jpg 1x"
+                                media="(min-width: 480px)">
+
+
+                            <img class="worker-picture" src="images/img3.jpg" alt="фото сотрудника">
 
                         </picture>
 
 
-                        <p class="picture-title">Дизайнерские решения</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                        <div class="worker-occupation">
+                            <h3 class="worker-occupation__name">Николай Тарасов</h3>
+                            <p class="worker-occupation__title">Marketing</p>
+                            <ul class="worker-meny">
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram-2-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
 
-    <!-- OUR COMPANY -->
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector4-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector5-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ourcompany-menu__list">
 
-    <section class="ourcompany">
-        <div class="container">
-            <h2 class="title-work">Наша команда</h2>
-            <ul class="ourcompany-menu">
-                <li class="ourcompany-menu__list">
-                    <picture>
+                        <picture>
 
-                        <source
-                            srcset="./images/desktop/product-designer2x-min.jpg 2x,./images/desktop/product-designer-min.jpg 1x"
-                            media="(min-width: 1200px)">
-                        <source srcset="./images/table/img@2x-min.jpg 2x, ./images/table/img-min.jpg 1x"
-                            media="(min-width: 768px)">
-                        <source srcset="./images/mobile/img@2xt1-min.jpg 2x, ./images/mobile/img-min.jpg 1x"
-                            media="(min-width: 480px)">
-
-
-                        <img class="worker-picture" src="images/img1.jpg" alt="фото сотрудника">
-
-                    </picture>
-
-                    <div class="worker-occupation">
-                        <h3 class="worker-occupation__name">Игорь Демьяненко</h3>
-                        <p class="worker-occupation__title">Product Designer</p>
-                        <ul class="worker-meny">
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram-2-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector4-2"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector5-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="ourcompany-menu__list">
-
-                    <picture>
-
-                        <source
-                            srcset="./images/desktop/frontend-developer2x-min.jpg 2x,./images/desktop/frontend-developer-min.jpg 1x"
-                            media="(min-width: 1200px)">
-                        <source srcset="./images/table/img@2xq-min.jpg 2x, ./images/table/imgq-min.jpg 1x"
-                            media="(min-width: 768px)">
-                        <source srcset="./images/mobile/img@2xt2-min.jpg 2x, ./images/mobile/imgt2-min.jpg 1x"
-                            media="(min-width: 480px)">
+                            <source
+                                srcset="./images/desktop/ui-designer2x-min.jpg 2x,./images/desktop/ui-designer -min.jpg 1x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/table/img@2x4man-min.jpg 2x, ./images/table/img4man-min.jpg 1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/img@2xt4-min.jpg 2x, ./images/mobile/imgt4-min.jpg 1x"
+                                media="(min-width: 480px)">
 
 
-                        <img class="worker-picture" src="images/img2.jpg" alt="фото сотрудника">
+                            <img class="worker-picture" src="images/img4.jpg" alt="фото сотрудника">
 
-                    </picture>
-
-
-                    <div class="worker-occupation">
-                        <h3 class="worker-occupation__name">Ольга Репина</h3>
-                        <p class="worker-occupation__title">Frontend Developer</p>
-                        <ul class="worker-meny">
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram-2-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector4-2"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector5-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="ourcompany-menu__list">
-
-                    <picture>
-
-                        <source srcset="./images/desktop/marketing2x-min.jpg 2x,./images/desktop/marketing-min.jpg 1x"
-                            media="(min-width: 1200px)">
-                        <source srcset="./images/table/img@2x3man-min.jpg 2x, ./images/table/img3man-min.jpg 1x"
-                            media="(min-width: 768px)">
-                        <source srcset="./images/mobile/img@2xt3-min.jpg 2x, ./images/mobile/imgt3-min.jpg 1x"
-                            media="(min-width: 480px)">
+                        </picture>
 
 
-                        <img class="worker-picture" src="images/img3.jpg" alt="фото сотрудника">
+                        <div class="worker-occupation">
+                            <h3 class="worker-occupation__name">Михаил Ермаков</h3>
+                            <p class="worker-occupation__title">UI Designer</p>
+                            <ul class="worker-meny">
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram-2-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
 
-                    </picture>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector4-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-Vector5-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="worker-meny__links">
+                                    <a href="" class="worker-meny__socialelink">
+                                        <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+        </section>
 
-                    <div class="worker-occupation">
-                        <h3 class="worker-occupation__name">Николай Тарасов</h3>
-                        <p class="worker-occupation__title">Marketing</p>
-                        <ul class="worker-meny">
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram-2-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
+        <!-- CUSTOMERS -->
 
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector4-2"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector5-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="ourcompany-menu__list">
+        <section class="customers">
+            <div class="container">
+                <h2 class="title-work">Постоянные клиенты</h2>
+                <ul class="customers-meny">
+                    <li class="customers-meny__list">
+                        <a href="" class="customers-meny__link">
+                            <svg class="customers-meny__svg">
+                                <use href="./images/sprite.svg#icon-Logo-5"></use>
+                            </svg>
+                        </a>
 
-                    <picture>
-
-                        <source
-                            srcset="./images/desktop/ui-designer2x-min.jpg 2x,./images/desktop/ui-designer -min.jpg 1x"
-                            media="(min-width: 1200px)">
-                        <source srcset="./images/table/img@2x4man-min.jpg 2x, ./images/table/img4man-min.jpg 1x"
-                            media="(min-width: 768px)">
-                        <source srcset="./images/mobile/img@2xt4-min.jpg 2x, ./images/mobile/imgt4-min.jpg 1x"
-                            media="(min-width: 480px)">
-
-
-                        <img class="worker-picture" src="images/img4.jpg" alt="фото сотрудника">
-
-                    </picture>
-
-
-                    <div class="worker-occupation">
-                        <h3 class="worker-occupation__name">Михаил Ермаков</h3>
-                        <p class="worker-occupation__title">UI Designer</p>
-                        <ul class="worker-meny">
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram-2-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector4-2"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-Vector5-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="worker-meny__links">
-                                <a href="" class="worker-meny__socialelink">
-                                    <svg class="worker-meny__socialelinkcolorgrey" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- CUSTOMERS -->
-
-    <section class="customers">
-        <div class="container">
-            <h2 class="title-work">Постоянные клиенты</h2>
-            <ul class="customers-meny">
-                <li class="customers-meny__list">
-                    <a href="" class="customers-meny__link">
-                        <svg class="customers-meny__svg">
-                            <use href="./images/sprite.svg#icon-Logo-5"></use>
-                        </svg>
-                    </a>
-
-                </li>
-                <li class="customers-meny__list">
-                    <a href="" class="customers-meny__link">
-                        <svg class="customers-meny__svg">
-                            <use href="./images/sprite.svg#icon-Logo-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-meny__list">
-                    <a href="" class="customers-meny__link">
-                        <svg class="customers-meny__svg">
-                            <use href="./images/sprite.svg#icon-Logo-2-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-meny__list">
-                    <a href="" class="customers-meny__link">
-                        <svg class="customers-meny__svg">
-                            <use href="./images/sprite.svg#icon-Logo-3-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-meny__list">
-                    <a href="" class="customers-meny__link">
-                        <svg class="customers-meny__svg">
-                            <use href="./images/sprite.svg#icon-Logo-4-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-meny__list">
-                    <a href="" class="customers-meny__link">
-                        <svg class="customers-meny__svg">
-                            <use href="./images/sprite.svg#icon-group-1"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
+                    </li>
+                    <li class="customers-meny__list">
+                        <a href="" class="customers-meny__link">
+                            <svg class="customers-meny__svg">
+                                <use href="./images/sprite.svg#icon-Logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-meny__list">
+                        <a href="" class="customers-meny__link">
+                            <svg class="customers-meny__svg">
+                                <use href="./images/sprite.svg#icon-Logo-2-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-meny__list">
+                        <a href="" class="customers-meny__link">
+                            <svg class="customers-meny__svg">
+                                <use href="./images/sprite.svg#icon-Logo-3-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-meny__list">
+                        <a href="" class="customers-meny__link">
+                            <svg class="customers-meny__svg">
+                                <use href="./images/sprite.svg#icon-Logo-4-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-meny__list">
+                        <a href="" class="customers-meny__link">
+                            <svg class="customers-meny__svg">
+                                <use href="./images/sprite.svg#icon-group-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main> -->
 
     <!-- FOOTER -->
@@ -664,11 +669,11 @@
         </div>
     </div>
 
-    </div>
 
 
 
-    <script src="./js/menu.js"></script>
+
+    <script src="./js/menu.js" defer></script>
     <script src="./js/modal.js"></script>
 
 </body>

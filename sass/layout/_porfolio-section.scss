@@ -1,7 +1,9 @@
 .portfolio {
   margin-top: 92px;
 }
-
+// .hidden {
+//   overflow: hidden;
+// }
 .portfolio-menu {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -12,7 +14,6 @@
     margin-bottom: 94px;
   }
   &__list {
-    // flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
     cursor: pointer;

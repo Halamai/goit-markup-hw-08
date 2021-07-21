@@ -612,10 +612,6 @@ body {
   }
 }
 
-.ourwork-title__textmargin {
-  margin-left: 30px;
-}
-
 .title {
   font-size: 14px;
   line-height: 1.14;
@@ -839,6 +835,7 @@ body {
 }
 
 .customers-meny__list {
+  margin-left: 30px;
   color: #afb1b8;
   width: 170px;
   height: 92px;
